@@ -52,5 +52,10 @@ public class FooBarQixTest {
 	public void containsOnlyMany7Test() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(77).equals("QixQix"));
 	}
+	
+	@Test
+	public void divisorsFirstThenContainsTest() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(35).equals("BarFoo"));
+	}
 
 }
