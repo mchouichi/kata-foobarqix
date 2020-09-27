@@ -42,5 +42,10 @@ public class FooBarQixTest {
 	public void containsOnlyMany5Test() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(55).equals("BarBarBar"));
 	}
+	
+	@Test
+	public void containsOnlyOne7Test() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(7).equals(Launcher.QIX));
+	}
 
 }

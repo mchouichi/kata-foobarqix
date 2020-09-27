@@ -12,6 +12,8 @@ public class Launcher {
 
 	public final static String BAR = "Bar";
 
+	public final static String QIX = "Qix";
+
 	public static void main(String[] args) {
 
 	}
