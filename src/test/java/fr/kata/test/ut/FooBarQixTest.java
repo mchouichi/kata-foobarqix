@@ -47,5 +47,10 @@ public class FooBarQixTest {
 	public void containsOnlyOne7Test() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(7).equals(Launcher.QIX));
 	}
+	
+	@Test
+	public void containsOnlyMany7Test() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(77).equals("QixQix"));
+	}
 
 }
