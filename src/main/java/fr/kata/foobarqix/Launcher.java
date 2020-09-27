@@ -31,9 +31,7 @@ public class Launcher {
 			msg.append(BAR);
 		}
 
-		if (numbStr.contains("5")) {
-			msg.append(BAR);
-		}
+		numbStr.chars().filter(car -> car == '5').forEach(x -> msg.append(BAR));
 
 		return msg.toString();
 	}
