@@ -26,6 +26,10 @@ public class Launcher {
 
 		Integer.toString(numb).chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
 
+		if (numb % 5 == 0) {
+			msg.append(BAR);
+		}
+
 		return msg.toString();
 	}
 
