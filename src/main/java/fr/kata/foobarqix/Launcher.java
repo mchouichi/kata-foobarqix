@@ -31,11 +31,15 @@ public class Launcher {
 		}
 
 		String numbStr = Integer.toString(numb);
-		numbStr.chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
-
-		numbStr.chars().filter(car -> car == '5').forEach(x -> msg.append(BAR));
-
-		numbStr.chars().filter(car -> car == '7').forEach(x -> msg.append(QIX));
+		numbStr.chars().forEach(car -> {
+			if (car == '3') {
+				msg.append(FOO);
+			} else if (car == '5') {
+				msg.append(BAR);
+			} else if (car == '7') {
+				msg.append(QIX);
+			}
+		});
 
 		return msg.toString();
 	}
