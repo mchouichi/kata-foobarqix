@@ -30,6 +30,10 @@ public class Launcher {
 			msg.append(BAR);
 		}
 
+		if (Integer.toString(numb).contains("5")) {
+			msg.append(BAR);
+		}
+
 		return msg.toString();
 	}
 
