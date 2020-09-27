@@ -22,5 +22,10 @@ public class FooBarQixTest {
 	public void containsOnlyOne3Test() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(13).equals(Launcher.FOO));
 	}
+	
+	@Test
+	public void containsOnlyMany3Test() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(33).equals("FooFooFoo"));
+	}
 
 }
