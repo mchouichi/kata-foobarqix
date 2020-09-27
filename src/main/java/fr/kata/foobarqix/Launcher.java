@@ -16,6 +16,12 @@ public class Launcher {
 
 	public static void main(String[] args) {
 
+		StringBuilder msg = new StringBuilder();
+		for (int i = 1; i <= 100; i++) {
+			msg.append(applyFooBarQixRules(i));
+			msg.append("\n");
+		}
+		System.out.println(msg);
 	}
 
 	public static String applyFooBarQixRules(int numb) {
