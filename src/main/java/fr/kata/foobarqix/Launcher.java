@@ -16,6 +16,9 @@ public class Launcher {
 
 	public static String applyFooBarQixRules(int numb) {
 
+		if (numb % 3 == 0) {
+			return FOO;
+		}
 		return null;
 	}
 
