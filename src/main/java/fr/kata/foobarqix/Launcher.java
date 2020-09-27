@@ -24,13 +24,14 @@ public class Launcher {
 			msg.append(FOO);
 		}
 
-		Integer.toString(numb).chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
+		String numbStr = Integer.toString(numb);
+		numbStr.chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
 
 		if (numb % 5 == 0) {
 			msg.append(BAR);
 		}
 
-		if (Integer.toString(numb).contains("5")) {
+		if (numbStr.contains("5")) {
 			msg.append(BAR);
 		}
 
