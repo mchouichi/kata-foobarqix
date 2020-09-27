@@ -26,12 +26,12 @@ public class Launcher {
 			msg.append(FOO);
 		}
 
-		String numbStr = Integer.toString(numb);
-		numbStr.chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
-
 		if (numb % 5 == 0) {
 			msg.append(BAR);
 		}
+
+		String numbStr = Integer.toString(numb);
+		numbStr.chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
 
 		numbStr.chars().filter(car -> car == '5').forEach(x -> msg.append(BAR));
 
