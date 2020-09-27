@@ -35,6 +35,10 @@ public class Launcher {
 
 		numbStr.chars().filter(car -> car == '5').forEach(x -> msg.append(BAR));
 
+		if (numbStr.contains("7")) {
+			msg.append(QIX);
+		}
+
 		return msg.toString();
 	}
 
