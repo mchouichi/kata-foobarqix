@@ -27,5 +27,10 @@ public class FooBarQixTest {
 	public void containsOnlyMany3Test() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(33).equals("FooFooFoo"));
 	}
+	
+	@Test
+	public void dividedOnlyBy5Test() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(10).equals(Launcher.BAR));
+	}
 
 }

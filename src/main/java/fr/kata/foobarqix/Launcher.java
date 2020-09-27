@@ -10,6 +10,8 @@ public class Launcher {
 
 	public final static String FOO = "Foo";
 
+	public final static String BAR = "Bar";
+
 	public static void main(String[] args) {
 
 	}
