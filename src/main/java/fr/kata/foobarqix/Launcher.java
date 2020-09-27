@@ -40,7 +40,7 @@ public class Launcher {
 			}
 		});
 
-		return msg.toString();
+		return msg.toString().isEmpty() ? Integer.toString(numb) : msg.toString();
 	}
 
 }
