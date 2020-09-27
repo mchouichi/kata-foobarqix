@@ -17,5 +17,10 @@ public class FooBarQixTest {
 	public void dividedOnlyBy3Test() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(9).equals(Launcher.FOO));
 	}
+	
+	@Test
+	public void containsOnlyOne3Test() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(13).equals(Launcher.FOO));
+	}
 
 }
