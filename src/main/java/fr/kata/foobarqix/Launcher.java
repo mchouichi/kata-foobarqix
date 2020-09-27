@@ -30,8 +30,7 @@ public class Launcher {
 			msg.append(BAR);
 		}
 
-		String numbStr = Integer.toString(numb);
-		numbStr.chars().forEach(car -> {
+		Integer.toString(numb).chars().forEach(car -> {
 			if (car == '3') {
 				msg.append(FOO);
 			} else if (car == '5') {
