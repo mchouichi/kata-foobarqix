@@ -64,6 +64,12 @@ public class FooBarQixTest {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(73).equals("QixFoo"));
 	}
 	
+	@Test
+	public void notDivisibleNotContainsTest() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(1).equals("1"));
+		Assert.assertTrue(Launcher.applyFooBarQixRules(8).equals("8"));
+	}
+	
 	
 
 }
