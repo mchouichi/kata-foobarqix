@@ -16,10 +16,14 @@ public class Launcher {
 
 	public static String applyFooBarQixRules(int numb) {
 
+		String msg ="";
 		if (numb % 3 == 0) {
-			return FOO;
+			msg = FOO;
 		}
-		return null;
+		if(Integer.toString(numb).contains("3")) {
+			msg += FOO;
+		}
+		return msg;
 	}
 
 }
