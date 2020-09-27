@@ -21,9 +21,9 @@ public class Launcher {
 		if (numb % 3 == 0) {
 			msg.append(FOO);
 		}
-		if (Integer.toString(numb).contains("3")) {
-			msg.append(FOO);
-		}
+
+		Integer.toString(numb).chars().filter(car -> car == '3').forEach(x -> msg.append(FOO));
+
 		return msg.toString();
 	}
 
