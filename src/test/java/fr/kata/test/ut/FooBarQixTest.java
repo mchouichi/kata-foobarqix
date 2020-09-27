@@ -57,5 +57,13 @@ public class FooBarQixTest {
 	public void divisorsFirstThenContainsTest() {
 		Assert.assertTrue(Launcher.applyFooBarQixRules(35).equals("BarFooBar"));
 	}
+	
+	@Test
+	public void orderContains() {
+		Assert.assertTrue(Launcher.applyFooBarQixRules(53).equals("BarFoo"));
+		Assert.assertTrue(Launcher.applyFooBarQixRules(73).equals("QixFoo"));
+	}
+	
+	
 
 }
